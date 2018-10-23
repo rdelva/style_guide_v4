@@ -43,3 +43,16 @@ $mobile-sm					: 340px;
 $mobile-xs					: 320px;
 $tablet						: 760px;
 $laptop						: 1024px;	
+
+
+//UI Colors
+
+$ui-colors: (
+	default					: $malibuBlue;
+	success					: $emerald;
+	error					: $sunglo;
+	warning					: $coral;
+	info					: $purpleMountain;	
+
+
+);
