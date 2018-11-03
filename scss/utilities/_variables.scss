@@ -48,11 +48,18 @@ $laptop						: 1024px;
 //UI Colors
 
 $ui-colors: (
-	default					: $malibuBlue;
-	success					: $emerald;
-	error					: $sunglo;
-	warning					: $coral;
-	info					: $purpleMountain;	
+	default					: $malibuBlue,
+	success					: $emerald,
+	error					: $sunglo,
+	warning					: $coral,
+	info					: $purpleMountain	
 
 
 );
+
+//Grid
+
+$g-col-width				: 65px;
+$g-gutter-width				: 20px;
+$g-col-count				: 12px;
+$g-cont-max-w				: 1050px;
