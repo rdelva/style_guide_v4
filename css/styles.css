@@ -1,5 +1,9 @@
 /*desaturated blue*/
 /*shade of blue	*/
+.nav {
+  list-style-type: none;
+}
+
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -336,9 +340,9 @@ template {
   box-sizing: border-box;
 }
 
-.container {
-  padding: 10px;
-  width: 90%;
+.grid__row {
+  margin: 10px auto;
+  width: 95%;
 }
 
 /*# sourceMappingURL=styles.css.map */

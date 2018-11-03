@@ -2,12 +2,10 @@
 // Grid Container
 //=========================================================
 
-.container {
-	padding:10px;
+
+
+.grid__row {
+	@extend %containerPadding;
 
 }
 
-.grid_row {
-	margin: 0 auto;
-	width: 95%;
-}
