@@ -1,2 +1,6 @@
 //Grid
 
+.grid__row {
+	@extend %containerPadding;
+
+}

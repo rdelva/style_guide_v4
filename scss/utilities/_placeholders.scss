@@ -14,7 +14,24 @@
 
 .nav  {
 	list-style-type:none;
+	
 
+	&__item {
+		padding: 20px;
+		text-align:center;
 
+		&:link {
+			text-decoration: none;
+		}
 
+		&:hover {
+			background-color: $turquoise;
+			color: $white;
+		}
+
+		&:active{
+			color: $white;
+		}
+
+	}
 }

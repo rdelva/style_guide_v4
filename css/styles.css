@@ -3,6 +3,25 @@
 .nav {
   list-style-type: none;
 }
+.nav__item {
+  padding: 20px;
+  text-align: center;
+}
+.nav__item:link {
+  text-decoration: none;
+}
+.nav__item:hover {
+  background-color: #58e1c1;
+  color: #fff;
+}
+.nav__item:active {
+  color: #fff;
+}
+
+.grid__row {
+  margin: 10px auto;
+  width: 95%;
+}
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -338,11 +357,6 @@ template {
 
 * {
   box-sizing: border-box;
-}
-
-.grid__row {
-  margin: 10px auto;
-  width: 95%;
 }
 
 /*# sourceMappingURL=styles.css.map */
