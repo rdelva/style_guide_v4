@@ -1,0 +1,55 @@
+//Headlines
+//===============================================
+
+
+.headline {
+	&--primary {
+		color: $turquoise;
+		font-weight: $font-weight--bold;
+		padding-left:10px;
+	}
+
+	&--secondary {
+		color: $blueGrey;
+
+	}
+}
+
+
+//Links
+//===============================================
+
+a{
+	font-weight:bold;
+	color: $malibuBlue;
+	text-decoration:none;
+}
+
+
+
+
+//Blockquote
+//===============================================
+
+.blockquote {
+	border-left: 4px solid $turquoise;
+	padding-left:10px;
+}
+
+
+
+//Images
+//===============================================
+
+
+
+.img {
+	
+	max-width: 100%;
+	width:100%;
+
+	&--avatar {
+		text-align: center;
+	}
+
+}
