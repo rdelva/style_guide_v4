@@ -3,12 +3,16 @@
 //=========================================================
 
 * {
-	box-sizing: border-box;
+	
+	box-sizing:  border-box;
 }		
 
 body{
 
-}
+	font-size: $base__font-size;
+	line-height: ($base__line/$base__font-size);
+	font-family: $font-family--primary;
+}	
 
 
 //==========================================================
@@ -16,7 +20,7 @@ body{
 //==========================================================
 
 h1 {
-
+	font-size: em(48px);
 }
 
 

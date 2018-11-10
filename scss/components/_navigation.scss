@@ -1,0 +1,40 @@
+//=================================
+//Navigation
+//=================================
+
+.nav {
+	padding: 0px;
+} 
+
+
+.nav__item {
+	list-style-type: none;
+
+
+	a {
+		display: block;
+		padding:10px 0;
+		text-align: center;
+		text-decoration:none;
+		border-radius: 5px;
+		color: $blueGrey;
+		
+
+		&:link {
+			color: $blueGrey;
+		}
+
+		&:active {
+			color: $blueGrey;
+		}
+
+		&:hover {
+			color: $white;
+			background-color: $turquoise;
+		}
+
+	}
+
+}
+
+

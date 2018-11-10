@@ -1,26 +1,112 @@
 /*desaturated blue*/
 /*shade of blue	*/
-.nav {
-  list-style-type: none;
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,400i,700");
+@media (min-width: 769px) {
+  .grid__col--1 {
+    width: 6.5%;
+    border: solid black 1px;
+  }
+
+  .grid__col--2 {
+    width: 15%;
+    border: solid black 1px;
+  }
+
+  .grid__col--3 {
+    width: 23.5%;
+    border: solid black 1px;
+  }
+
+  .grid__col--4 {
+    width: 32%;
+    border: solid black 1px;
+  }
+
+  .grid__col--5 {
+    width: 40.5%;
+    border: solid black 1px;
+  }
+
+  .grid__col--6 {
+    width: 49%;
+    border: solid black 1px;
+  }
+
+  .grid__col--7 {
+    width: 57.5%;
+    border: solid black 1px;
+  }
+
+  .grid__col--8 {
+    width: 66%;
+    border: solid black 1px;
+  }
+
+  .grid__col--9 {
+    width: 74.5%;
+    border: solid black 1px;
+  }
+
+  .grid__col--10 {
+    width: 83%;
+    border: solid black 1px;
+  }
+
+  .grid__col--11 {
+    width: 91.5%;
+    border: solid black 1px;
+  }
+
+  .grid__col--12 {
+    width: 100%;
+    border: solid black 1px;
+  }
 }
-.nav__item {
-  padding: 20px;
-  text-align: center;
+@media (min-width: 1px) and (max-width: 768px) {
+  [class^=grid__col--] {
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+  }
 }
-.nav__item:link {
-  text-decoration: none;
-}
-.nav__item:hover {
-  background-color: #58e1c1;
-  color: #fff;
-}
-.nav__item:active {
-  color: #fff;
+@media (min-width: 769px) {
+  [class^=grid__col--] {
+    float: left;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  [class^=grid__col--] + [class^=grid__col--] {
+    margin-left: 2%;
+  }
+  [class^=grid__col--]:last-of-type {
+    float: right;
+  }
 }
 
-.grid__row {
-  margin: 10px auto;
-  width: 95%;
+.nav {
+  padding: 0px;
+}
+
+.nav__item {
+  list-style-type: none;
+}
+.nav__item a {
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #384047;
+}
+.nav__item a:link {
+  color: #384047;
+}
+.nav__item a:active {
+  color: #384047;
+}
+.nav__item a:hover {
+  color: #fff;
+  background-color: #58e1c1;
 }
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -357,6 +443,16 @@ template {
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  font-size: 3em;
 }
 
 /*# sourceMappingURL=styles.css.map */

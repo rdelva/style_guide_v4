@@ -2,6 +2,13 @@
 
 
 //Flexbox Settings
-.container {
+
+//Adjacent sibling margins
+
+@mixin doubly($margin: 1em) {
+	& + & {
+		margin-left: $margin;
+		@content;
+	}
 	
 }
