@@ -8,6 +8,7 @@
 }
 .headline--secondary {
   color: #384047;
+  font-weight: 300;
 }
 
 a {
@@ -135,6 +136,61 @@ a {
 .nav__item a:hover {
   color: #fff;
   background-color: #58e1c1;
+}
+
+.btn--default {
+  background-color: #57defc;
+  border: 0px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+.btn--success {
+  background-color: #63cc82;
+  border: 0px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+.btn--error {
+  background-color: #E4757A;
+  border: 0px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+.btn--warning {
+  background-color: #fd7856;
+  border: 0px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+.btn--info {
+  background-color: #927BC1;
+  border: 0px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.form__label--hidden {
+  display: none;
+}
+.form__input {
+  padding: 10px;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 4px solid #58e1c1;
+  margin-bottom: 10px;
+  width: 100%;
+  font-weight: 400;
 }
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
