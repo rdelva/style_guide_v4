@@ -12,6 +12,7 @@
 		//Generate column modifier classes
 
 		.grid__col--#{$i} {
+			max-width: percentage($target / $context);
 			width: percentage($target / $context);
 			border:solid black 1px;
 			

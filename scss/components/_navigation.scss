@@ -38,3 +38,22 @@
 }
 
 
+.grid__row {
+	&:first-child {
+		display: flex;
+		flex-wrap: wrap;
+
+		.grid__col--3 {
+				}
+
+		.nav {	
+
+			display: flex;
+
+			flex-direction: column;			
+		}
+	}
+
+}
+
+
