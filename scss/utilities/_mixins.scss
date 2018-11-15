@@ -26,7 +26,21 @@
 			color: $white;
 			text-transform: uppercase;
 			font-weight: $font-weight--bold;
+			border-radius: 10px;
+		
+		}
+
+	}
+
+	@each $theme, $color in $grid-colors {
+
+		&__#{$theme} {
+			background-color: $color;
+			padding:10px;
+			border-radius: 5px;
 		}
 
 	}
 }
+
+

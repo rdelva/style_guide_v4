@@ -26,6 +26,7 @@
 }
 
 
+
 @for  $i from 1 through $g-col-count {
 		.grid__col--#{$i} {
 			
@@ -35,7 +36,13 @@
 }	
 
 
+//================================
+// Grid Row
+//================================
 
+.grid {
+	@include bg-colors($grid-colors);
+}
 
 
 @media (min-width: 769px) {
@@ -80,6 +87,8 @@
 	}
 
 }
+
+
 
 
 

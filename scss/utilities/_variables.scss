@@ -62,6 +62,19 @@ $ui-colors: (
 	info					: $purpleMountain	
 );
 
+
+//Grid Colors
+
+$grid-colors: (
+	'col--12.theme__colors'			: $turquoiseBlue,
+	'col--6.theme__colors'			: $shakespeare,
+	'col--4.theme__colors'	 		: $lilac,
+	'col--3.theme__colors'			: $malibuBlue,
+	'col--5.theme__colors'			: $emerald,	
+	'col--7.theme__colors'			: $seaPink,
+	'col--8.theme__colors'	 		: $sunglo
+);
+
 //Grid
 
 $g-col-width				: 65px;
