@@ -1,6 +1,42 @@
+
+//Container
+//===============================================
+
+.container {
+	padding: 10px;
+}
+
+
 //================================
 //Grid Columns
 //================================
+
+
+.grid__row{
+	&:first-child {
+		display: flex;
+		flex-direction: column;
+
+
+		.grid__col--3 {
+			align-self: center;
+		}
+		
+	}
+}
+
+
+@for  $i from 1 through $g-col-count {
+		.grid__col--#{$i} {
+			
+			display: flex;
+			flex-direction: column;			
+		}
+}	
+
+
+
+
 
 @media (min-width: 769px) {
 
@@ -44,3 +80,6 @@
 	}
 
 }
+
+
+

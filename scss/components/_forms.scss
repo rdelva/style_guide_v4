@@ -1,9 +1,15 @@
 .form {
+
+	display:flex;
+	flex-direction:column;
+
 	&__label {
 		&--hidden {
 			display: none;
 		}
 	}
+
+	
 
 	&__input{
 		padding: 10px;
