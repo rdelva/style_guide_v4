@@ -11,7 +11,7 @@
   font-weight: 300;
 }
 
-a {
+.link {
   font-weight: bold;
   color: #57defc;
   text-decoration: none;
@@ -25,7 +25,16 @@ a {
 .container {
   padding: 10px;
 }
+@media (min-width: 768px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
 
+.grid__row {
+  margin: 25px 0;
+}
 .grid__row:first-child {
   display: flex;
   flex-direction: column;
@@ -194,73 +203,61 @@ a {
   .grid__col--1 {
     max-width: 6.5%;
     width: 6.5%;
-    border: solid black 1px;
   }
 
   .grid__col--2 {
     max-width: 15%;
     width: 15%;
-    border: solid black 1px;
   }
 
   .grid__col--3 {
     max-width: 23.5%;
     width: 23.5%;
-    border: solid black 1px;
   }
 
   .grid__col--4 {
     max-width: 32%;
     width: 32%;
-    border: solid black 1px;
   }
 
   .grid__col--5 {
     max-width: 40.5%;
     width: 40.5%;
-    border: solid black 1px;
   }
 
   .grid__col--6 {
     max-width: 49%;
     width: 49%;
-    border: solid black 1px;
   }
 
   .grid__col--7 {
     max-width: 57.5%;
     width: 57.5%;
-    border: solid black 1px;
   }
 
   .grid__col--8 {
     max-width: 66%;
     width: 66%;
-    border: solid black 1px;
   }
 
   .grid__col--9 {
     max-width: 74.5%;
     width: 74.5%;
-    border: solid black 1px;
   }
 
   .grid__col--10 {
     max-width: 83%;
     width: 83%;
-    border: solid black 1px;
   }
 
   .grid__col--11 {
     max-width: 91.5%;
     width: 91.5%;
-    border: solid black 1px;
   }
 
   .grid__col--12 {
     max-width: 100%;
     width: 100%;
-    border: solid black 1px;
   }
 }
 @media (min-width: 1px) and (max-width: 768px) {
@@ -777,6 +774,7 @@ body {
   line-height: 1.5;
   font-family: "Lato", sans-serif;
   color: #818181;
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */

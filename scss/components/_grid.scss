@@ -4,6 +4,12 @@
 
 .container {
 	padding: 10px;
+
+	@media (min-width:768px)
+	{
+		width:95%;
+		margin: 0 auto;
+	}
 }
 
 
@@ -13,9 +19,12 @@
 
 
 .grid__row{
+	margin:25px 0;
+
 	&:first-child {
 		display: flex;
 		flex-direction: column;
+
 
 
 		.grid__col--3 {
@@ -57,7 +66,7 @@
 		.grid__col--#{$i} {
 			max-width: percentage($target / $context);
 			width: percentage($target / $context);
-			border:solid black 1px;
+			
 			
 			
 			
