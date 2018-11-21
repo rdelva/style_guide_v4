@@ -12,9 +12,15 @@ body{
 	font-size: $base__font-size;
 	line-height: ($base__line/$base__font-size);
 	font-family: $font-family--primary;
-	color: $stormCloud;
 	width:100%;
 
 }	
 
 
+
+ul {
+
+	list-style-type: none;
+	padding:0;
+
+}

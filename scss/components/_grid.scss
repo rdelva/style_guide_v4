@@ -5,12 +5,14 @@
 .container {
 	padding: 10px;
 
-	@media (min-width:768px)
+	@media (min-width:$tablet)
 	{
 		width:95%;
 		margin: 0 auto;
 	}
 }
+
+
 
 
 //================================
@@ -19,19 +21,42 @@
 
 
 .grid__row{
-	margin:25px 0;
+
+	width: 90%;
+	@extend %clearfix;
+
+
+	@media (min-width: $tablet) {
+		margin:10px;
+	
+		
+	}
+
 
 	&:first-child {
 		display: flex;
 		flex-direction: column;
 
+		@media (min-width: $tablet)
+		{
+			flex-direction: row;	
+			flex-wrap: wrap;
+		}
 
 
 		.grid__col--3 {
 			align-self: center;
+
+				@media (min-width: $tablet)
+				{
+					align-self: start;
+				}
 		}
 		
+
 	}
+
+
 }
 
 
@@ -40,7 +65,10 @@
 		.grid__col--#{$i} {
 			
 			display: flex;
-			flex-direction: column;			
+			flex-direction: column;	
+
+		
+
 		}
 }	
 
@@ -91,7 +119,9 @@
 		padding-left:10px;
 		padding-right:10px;
 		&:last-of-type {  
-			float:right;
+			float:none;
+			margin-right:auto;
+			margin-left:auto;
 		 }
 	}
 

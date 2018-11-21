@@ -1,40 +1,36 @@
 //=================================
 //Navigation
 //=================================
-.nav {
-	padding:0px;
+nav {
+	align-self: right;
 }
 
-.nav__item {
-	list-style-type: none;
+.nav {
 
-
-	a {
-		display: block;
-		padding:10px 0;
-		text-align: center;
-		text-decoration:none;
-		border-radius: 5px;
-		color: $blueGrey;
-		
-
-		&:link {
-			color: $blueGrey;
-		}
-
-		&:active {
-			color: $blueGrey;
-		}
-
-		&:hover {
-			color: $white;
-			background-color: $turquoise;
-		}
+	@media (min-width: $tablet)
+	{
+		display: flex;
+		flex-wrap: wrap;
 
 	}
 
+	&__item{
+
+		text-align: center;
+		margin: 10px 0;
+
+		a {
+			text-decoration: none;
+			display: block;
+			padding:10px;
+
+			&:hover {
+				background-color: $turquoise;
+				color:$white;
+				border-radius: $br;
+
+			}		
+		}
+	}
+
 }
-
-
-
-

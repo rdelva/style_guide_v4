@@ -48,7 +48,7 @@ $cloudy						: #cdcdcd;
 $mobile-lg					: 425px;							
 $mobile-sm					: 340px;
 $mobile-xs					: 320px;
-$tablet						: 760px;
+$tablet						: 768px;
 $laptop						: 1024px;	
 
 
@@ -68,11 +68,11 @@ $ui-colors: (
 $grid-colors: (
 	'col--12.theme__colors'			: $turquoiseBlue,
 	'col--6.theme__colors'			: $shakespeare,
-	'col--4.theme__colors'	 		: $lilac,
-	'col--3.theme__colors'			: $malibuBlue,
+	'col--4.theme__colors'	 		: $malibuBlue,
+	'col--3.theme__colors'			: $lilac,
 	'col--5.theme__colors'			: $emerald,	
 	'col--7.theme__colors'			: $seaPink,
-	'col--8.theme__colors'	 		: $sunglo
+	'col--8.theme__colors'	 		: $vividTangerine
 );
 
 //Grid
@@ -81,3 +81,7 @@ $g-col-width				: 65px;
 $g-gutter-width				: 20px;
 $g-col-count				: 12;
 $g-cont-max-w				: 1050px;
+
+//Border-Radius
+
+$br    						: 5px;
