@@ -7,6 +7,12 @@
   clear: both;
 }
 
+.grid__row {
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .headline--primary {
   color: #58e1c1;
   font-weight: 700;
@@ -73,60 +79,120 @@
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 768px) {
+  .grid__col--1 {
+    flex-direction: row;
+  }
+}
 
 .grid__col--2 {
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 768px) {
+  .grid__col--2 {
+    flex-direction: row;
+  }
 }
 
 .grid__col--3 {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 768px) {
+  .grid__col--3 {
+    flex-direction: row;
+  }
+}
 
 .grid__col--4 {
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 768px) {
+  .grid__col--4 {
+    flex-direction: row;
+  }
 }
 
 .grid__col--5 {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 768px) {
+  .grid__col--5 {
+    flex-direction: row;
+  }
+}
 
 .grid__col--6 {
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 768px) {
+  .grid__col--6 {
+    flex-direction: row;
+  }
 }
 
 .grid__col--7 {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 768px) {
+  .grid__col--7 {
+    flex-direction: row;
+  }
+}
 
 .grid__col--8 {
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 768px) {
+  .grid__col--8 {
+    flex-direction: row;
+  }
 }
 
 .grid__col--9 {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 768px) {
+  .grid__col--9 {
+    flex-direction: row;
+  }
+}
 
 .grid__col--10 {
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 768px) {
+  .grid__col--10 {
+    flex-direction: row;
+  }
 }
 
 .grid__col--11 {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 768px) {
+  .grid__col--11 {
+    flex-direction: row;
+  }
+}
 
 .grid__col--12 {
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 768px) {
+  .grid__col--12 {
+    flex-direction: row;
+  }
 }
 
 .grid--default {
@@ -303,9 +369,7 @@
     margin-left: 2%;
   }
   [class^=grid__col--]:last-of-type {
-    float: none;
-    margin-right: auto;
-    margin-left: auto;
+    float: right;
   }
 }
 
