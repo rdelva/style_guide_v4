@@ -27,15 +27,9 @@
 
 		&--#{$theme} {
 			background-color: $color; 
-			border:0px;
 			display: block;
-			width:100%;
-			padding: 10px;
-			margin: 10px 10px;
-			color: $white;
-			text-transform: uppercase;
-			font-weight: $font-weight--bold;
-			border-radius: 5px;
+			margin:10px;
+			@extend %buttonDesign;
 		
 		}
 
