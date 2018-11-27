@@ -1,3 +1,12 @@
+@mixin text($size, $l-height: null, $weight:null, $color:null){
+
+	font-size: $size;
+	line-height: $l-height;
+	font-weight: $weight;
+	color:$color;
+
+}
+
 //Media Queries
 
 
@@ -18,15 +27,7 @@
 
 		&--#{$theme} {
 			background-color: $color; 
-			border:0px;
-			display: block;
-			width:100%;
-			padding: 10px;
-			margin: 10px 0;
-			color: $white;
-			text-transform: uppercase;
-			font-weight: $font-weight--bold;
-			border-radius: 5px;
+		
 		
 		}
 

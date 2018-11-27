@@ -1,3 +1,4 @@
+/*$base__line					: 24px;*/
 /*desaturated blue*/
 /*shade of blue	*/
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,400i,700");
@@ -7,6 +8,9 @@
   clear: both;
 }
 
+/*@function em($target, $context: $base__font-size) {
+	@return ($target / $context) * 1em;
+}*/
 .headline--primary {
   color: #58e1c1;
   font-weight: 700;
@@ -192,63 +196,18 @@
 
 .grid--default {
   background-color: #57defc;
-  border: 0px;
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 700;
-  border-radius: 5px;
 }
 .grid--success {
   background-color: #63cc82;
-  border: 0px;
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 700;
-  border-radius: 5px;
 }
 .grid--error {
   background-color: #E4757A;
-  border: 0px;
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 700;
-  border-radius: 5px;
 }
 .grid--warning {
   background-color: #fd7856;
-  border: 0px;
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 700;
-  border-radius: 5px;
 }
 .grid--info {
   background-color: #927BC1;
-  border: 0px;
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 700;
-  border-radius: 5px;
 }
 .grid__col--12.theme__colors {
   background-color: #80e8d1;
@@ -349,8 +308,8 @@
 }
 @media (min-width: 1px) and (max-width: 768px) {
   [class^=grid__col--] {
-    margin-top: 0.75em;
-    margin-bottom: 0.75em;
+    margin-top: em(12px);
+    margin-bottom: em(12px);
   }
 }
 @media (min-width: 769px) {
@@ -414,63 +373,18 @@ nav {
 
 .btn--default {
   background-color: #57defc;
-  border: 0px;
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 700;
-  border-radius: 5px;
 }
 .btn--success {
   background-color: #63cc82;
-  border: 0px;
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 700;
-  border-radius: 5px;
 }
 .btn--error {
   background-color: #E4757A;
-  border: 0px;
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 700;
-  border-radius: 5px;
 }
 .btn--warning {
   background-color: #fd7856;
-  border: 0px;
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 700;
-  border-radius: 5px;
 }
 .btn--info {
   background-color: #927BC1;
-  border: 0px;
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 700;
-  border-radius: 5px;
 }
 .btn__col--12.theme__colors {
   background-color: #80e8d1;
@@ -505,6 +419,18 @@ nav {
 .btn__col--8.theme__colors {
   background-color: #fd9f85;
   padding: 10px;
+  border-radius: 5px;
+}
+
+.theme__colors {
+  border: 0px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
   border-radius: 5px;
 }
 
@@ -864,7 +790,7 @@ template {
 
 body {
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 0.6666666667;
   font-family: "Lato", sans-serif;
   width: 100%;
 }
