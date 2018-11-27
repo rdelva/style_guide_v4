@@ -8,6 +8,7 @@
 	@media (min-width:$tablet)
 	{
 		width:95%;
+		max-width: 1024px;
 		margin: 0 auto;
 	}
 }
@@ -129,6 +130,7 @@
 		padding-right:10px;
 		&:last-of-type {  
 			float:right;
+
 		 }
 	}
 
@@ -139,7 +141,7 @@
 */
  .centered { 
 
- 		@extend %centered;
+	@extends %centered;
 
 }
 

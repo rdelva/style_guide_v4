@@ -7,12 +7,6 @@
   clear: both;
 }
 
-.centered {
-  float: none;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .headline--primary {
   color: #58e1c1;
   font-weight: 700;
@@ -44,6 +38,7 @@
 @media (min-width: 768px) {
   .container {
     width: 95%;
+    max-width: 1024px;
     margin: 0 auto;
   }
 }
@@ -376,6 +371,10 @@
 /*not sure  down below if the code is correct 
   Also notice the position would not change due to  the media query above this code for the last child of type
 */
+.centered {
+  @extends %centered;
+}
+
 nav {
   align-self: right;
 }
