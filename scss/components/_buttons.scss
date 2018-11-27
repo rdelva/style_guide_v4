@@ -3,7 +3,7 @@
 	.btn--default{
 		background-color: $turquoiseBlue;
 		margin-top: 20px;
-		@extend %buttonDesign;
+		@extend %form__button;
 	}
 }
 

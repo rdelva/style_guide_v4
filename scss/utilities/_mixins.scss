@@ -29,7 +29,7 @@
 			background-color: $color; 
 			display: block;
 			margin:10px;
-			@extend %buttonDesign;
+			@extend %form__button;
 		
 		}
 
