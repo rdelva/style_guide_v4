@@ -7,7 +7,7 @@
   clear: both;
 }
 
-.centered {
+.grid__col--7.centered {
   float: none;
   margin-right: auto;
   margin-left: auto;
@@ -49,6 +49,10 @@
 .blockquote {
   border-left: 4px solid #58e1c1;
   padding-left: 10px;
+}
+
+.img--avatar {
+  margin: 0 auto;
 }
 
 .container {
@@ -238,36 +242,50 @@
   background-color: #80e8d1;
   padding: 10px;
   border-radius: 5px;
+  text-align: center;
+  display: block;
 }
 .grid__col--6.theme__colors {
   background-color: #3fabca;
   padding: 10px;
   border-radius: 5px;
+  text-align: center;
+  display: block;
 }
 .grid__col--4.theme__colors {
   background-color: #57defc;
   padding: 10px;
   border-radius: 5px;
+  text-align: center;
+  display: block;
 }
 .grid__col--3.theme__colors {
   background-color: #deb2ee;
   padding: 10px;
   border-radius: 5px;
+  text-align: center;
+  display: block;
 }
 .grid__col--5.theme__colors {
   background-color: #63cc82;
   padding: 10px;
   border-radius: 5px;
+  text-align: center;
+  display: block;
 }
 .grid__col--7.theme__colors {
   background-color: #ec9fa3;
   padding: 10px;
   border-radius: 5px;
+  text-align: center;
+  display: block;
 }
 .grid__col--8.theme__colors {
   background-color: #fd9f85;
   padding: 10px;
   border-radius: 5px;
+  text-align: center;
+  display: block;
 }
 
 @media (min-width: 769px) {
@@ -343,18 +361,16 @@
     min-height: 1px;
     padding-left: 10px;
     padding-right: 10px;
+    /*&:last-of-type {  
+    			float:right;
+    
+    		 }*/
   }
   [class^=grid__col--] + [class^=grid__col--] {
     margin-left: 2%;
   }
-  [class^=grid__col--]:last-of-type {
-    float: right;
-  }
 }
 
-/*not sure  down below if the code is correct 
-  Also notice the position would not change due to  the media query above this code for the last child of type
-*/
 nav {
   align-self: right;
 }
@@ -392,6 +408,9 @@ nav {
   align-self: center;
 }
 
+.form {
+  margin: 0 auto;
+}
 .form .btn--default {
   background-color: #80e8d1;
   margin-top: 20px;
@@ -426,36 +445,50 @@ nav {
   background-color: #80e8d1;
   padding: 10px;
   border-radius: 5px;
+  text-align: center;
+  display: block;
 }
 .grid__col--12 > .btn__col--6.theme__colors {
   background-color: #3fabca;
   padding: 10px;
   border-radius: 5px;
+  text-align: center;
+  display: block;
 }
 .grid__col--12 > .btn__col--4.theme__colors {
   background-color: #57defc;
   padding: 10px;
   border-radius: 5px;
+  text-align: center;
+  display: block;
 }
 .grid__col--12 > .btn__col--3.theme__colors {
   background-color: #deb2ee;
   padding: 10px;
   border-radius: 5px;
+  text-align: center;
+  display: block;
 }
 .grid__col--12 > .btn__col--5.theme__colors {
   background-color: #63cc82;
   padding: 10px;
   border-radius: 5px;
+  text-align: center;
+  display: block;
 }
 .grid__col--12 > .btn__col--7.theme__colors {
   background-color: #ec9fa3;
   padding: 10px;
   border-radius: 5px;
+  text-align: center;
+  display: block;
 }
 .grid__col--12 > .btn__col--8.theme__colors {
   background-color: #fd9f85;
   padding: 10px;
   border-radius: 5px;
+  text-align: center;
+  display: block;
 }
 
 .form {

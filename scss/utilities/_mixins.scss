@@ -41,13 +41,12 @@
 			background-color: $color;
 			padding: 10px;
 			border-radius: 5px;
+			
+			text-align: center;
+			display: block;
 		}
 
 	}
 }
 
 
-@mixin centered {
-	@extends %centered;
-	background-color:red;
-}
