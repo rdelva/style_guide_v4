@@ -3,14 +3,10 @@
 	font-size: $size;
 	line-height: $l-height;
 	font-weight: $weight;
-	color:$color;
+	color: $color;
 
 }
 
-//Media Queries
-
-
-//Flexbox Settings
 
 //Adjacent sibling margins
 
@@ -40,10 +36,11 @@
 		&__#{$theme} {
 			background-color: $color;
 			padding: 10px;
-			border-radius: 5px;
-			
+			border-radius: $br;
 			text-align: center;
 			display: block;
+
+			
 		}
 
 	}

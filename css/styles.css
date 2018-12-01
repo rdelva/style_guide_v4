@@ -361,10 +361,6 @@
     min-height: 1px;
     padding-left: 10px;
     padding-right: 10px;
-    /*&:last-of-type {  
-    			float:right;
-    
-    		 }*/
   }
   [class^=grid__col--] + [class^=grid__col--] {
     margin-left: 2%;
