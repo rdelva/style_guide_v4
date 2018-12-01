@@ -36,8 +36,14 @@
   font-weight: 300;
 }
 
+.form .headline--secondary {
+  margin: 1.33em;
+}
+
 .card {
   color: #818181;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .link {
@@ -241,6 +247,7 @@
 .grid__col--12.theme__colors {
   background-color: #80e8d1;
   padding: 10px;
+  margin: 5px;
   border-radius: 5px;
   text-align: center;
   display: block;
@@ -248,6 +255,7 @@
 .grid__col--6.theme__colors {
   background-color: #3fabca;
   padding: 10px;
+  margin: 5px;
   border-radius: 5px;
   text-align: center;
   display: block;
@@ -255,6 +263,7 @@
 .grid__col--4.theme__colors {
   background-color: #57defc;
   padding: 10px;
+  margin: 5px;
   border-radius: 5px;
   text-align: center;
   display: block;
@@ -262,6 +271,7 @@
 .grid__col--3.theme__colors {
   background-color: #deb2ee;
   padding: 10px;
+  margin: 5px;
   border-radius: 5px;
   text-align: center;
   display: block;
@@ -269,6 +279,7 @@
 .grid__col--5.theme__colors {
   background-color: #63cc82;
   padding: 10px;
+  margin: 5px;
   border-radius: 5px;
   text-align: center;
   display: block;
@@ -276,6 +287,7 @@
 .grid__col--7.theme__colors {
   background-color: #ec9fa3;
   padding: 10px;
+  margin: 5px;
   border-radius: 5px;
   text-align: center;
   display: block;
@@ -283,11 +295,11 @@
 .grid__col--8.theme__colors {
   background-color: #fd9f85;
   padding: 10px;
+  margin: 5px;
   border-radius: 5px;
   text-align: center;
   display: block;
 }
-
 @media (min-width: 769px) {
   .grid__col--1 {
     max-width: 6.5%;
@@ -386,6 +398,15 @@ nav {
   display: block;
   padding: 10px;
 }
+.nav__item a:link {
+  color: #818181;
+}
+.nav__item a:active {
+  color: #818181;
+}
+.nav__item a:visited {
+  color: #818181;
+}
 .nav__item a:hover {
   background-color: #58e1c1;
   color: #fff;
@@ -440,6 +461,7 @@ nav {
 .grid__col--12 > .btn__col--12.theme__colors {
   background-color: #80e8d1;
   padding: 10px;
+  margin: 5px;
   border-radius: 5px;
   text-align: center;
   display: block;
@@ -447,6 +469,7 @@ nav {
 .grid__col--12 > .btn__col--6.theme__colors {
   background-color: #3fabca;
   padding: 10px;
+  margin: 5px;
   border-radius: 5px;
   text-align: center;
   display: block;
@@ -454,6 +477,7 @@ nav {
 .grid__col--12 > .btn__col--4.theme__colors {
   background-color: #57defc;
   padding: 10px;
+  margin: 5px;
   border-radius: 5px;
   text-align: center;
   display: block;
@@ -461,6 +485,7 @@ nav {
 .grid__col--12 > .btn__col--3.theme__colors {
   background-color: #deb2ee;
   padding: 10px;
+  margin: 5px;
   border-radius: 5px;
   text-align: center;
   display: block;
@@ -468,6 +493,7 @@ nav {
 .grid__col--12 > .btn__col--5.theme__colors {
   background-color: #63cc82;
   padding: 10px;
+  margin: 5px;
   border-radius: 5px;
   text-align: center;
   display: block;
@@ -475,6 +501,7 @@ nav {
 .grid__col--12 > .btn__col--7.theme__colors {
   background-color: #ec9fa3;
   padding: 10px;
+  margin: 5px;
   border-radius: 5px;
   text-align: center;
   display: block;
@@ -482,11 +509,11 @@ nav {
 .grid__col--12 > .btn__col--8.theme__colors {
   background-color: #fd9f85;
   padding: 10px;
+  margin: 5px;
   border-radius: 5px;
   text-align: center;
   display: block;
 }
-
 .form {
   display: flex;
   flex-direction: column;
@@ -842,10 +869,7 @@ template {
 }
 
 body {
-  font-size: 16px;
-  line-height: 1.5;
   font-family: "Lato", sans-serif;
-  width: 100%;
 }
 
 ul {

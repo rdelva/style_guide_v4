@@ -24,12 +24,26 @@ nav {
 			display: block;
 			padding:10px;
 
+			&:link {
+				color:$stormCloud;
+			}
+
+			&:active{
+				color:$stormCloud;
+			}
+
+			&:visited{
+				color:$stormCloud;
+			}
+
 			&:hover {
 				background-color: $turquoise;
 				color:$white;
 				border-radius: $br;
 
-			}		
+			}
+
+
 		}
 	}
 

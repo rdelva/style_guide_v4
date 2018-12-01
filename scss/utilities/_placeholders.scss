@@ -17,10 +17,20 @@
 	}
 }
 
+.form {
+	.headline--secondary {
+		margin:1.33em;
+	}
+}
+
+
 //Cards
 //===============================================
 .card {
 		color: $stormCloud;
+		font-size: 16px;
+		line-height: line-height(24px, 16px);
+		
 }
 
 
