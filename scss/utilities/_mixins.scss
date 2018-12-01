@@ -35,15 +35,12 @@
 
 		&__#{$theme} {
 			background-color: $color;
-			padding: 10px;
-			margin:5px;			
+			padding: 10px;					
 			border-radius: $br;
 			text-align: center;
 			display: block;
 
-			@media(min-width: $tablet) {
-				margin:0px;
-			}
+
 
 
 
