@@ -67,7 +67,7 @@
 @media (min-width: 768px) {
   .container {
     width: 95%;
-    max-width: 1024px;
+    max-width: 1400px;
     margin: 0 auto;
   }
 }
@@ -252,6 +252,11 @@
   text-align: center;
   display: block;
 }
+@media (min-width: 768px) {
+  .grid__col--12.theme__colors {
+    margin: 0px;
+  }
+}
 .grid__col--6.theme__colors {
   background-color: #3fabca;
   padding: 10px;
@@ -259,6 +264,11 @@
   border-radius: 5px;
   text-align: center;
   display: block;
+}
+@media (min-width: 768px) {
+  .grid__col--6.theme__colors {
+    margin: 0px;
+  }
 }
 .grid__col--4.theme__colors {
   background-color: #57defc;
@@ -268,6 +278,11 @@
   text-align: center;
   display: block;
 }
+@media (min-width: 768px) {
+  .grid__col--4.theme__colors {
+    margin: 0px;
+  }
+}
 .grid__col--3.theme__colors {
   background-color: #deb2ee;
   padding: 10px;
@@ -275,6 +290,11 @@
   border-radius: 5px;
   text-align: center;
   display: block;
+}
+@media (min-width: 768px) {
+  .grid__col--3.theme__colors {
+    margin: 0px;
+  }
 }
 .grid__col--5.theme__colors {
   background-color: #63cc82;
@@ -284,6 +304,11 @@
   text-align: center;
   display: block;
 }
+@media (min-width: 768px) {
+  .grid__col--5.theme__colors {
+    margin: 0px;
+  }
+}
 .grid__col--7.theme__colors {
   background-color: #ec9fa3;
   padding: 10px;
@@ -291,6 +316,11 @@
   border-radius: 5px;
   text-align: center;
   display: block;
+}
+@media (min-width: 768px) {
+  .grid__col--7.theme__colors {
+    margin: 0px;
+  }
 }
 .grid__col--8.theme__colors {
   background-color: #fd9f85;
@@ -300,6 +330,12 @@
   text-align: center;
   display: block;
 }
+@media (min-width: 768px) {
+  .grid__col--8.theme__colors {
+    margin: 0px;
+  }
+}
+
 @media (min-width: 769px) {
   .grid__col--1 {
     max-width: 6.5%;
@@ -466,6 +502,11 @@ nav {
   text-align: center;
   display: block;
 }
+@media (min-width: 768px) {
+  .grid__col--12 > .btn__col--12.theme__colors {
+    margin: 0px;
+  }
+}
 .grid__col--12 > .btn__col--6.theme__colors {
   background-color: #3fabca;
   padding: 10px;
@@ -473,6 +514,11 @@ nav {
   border-radius: 5px;
   text-align: center;
   display: block;
+}
+@media (min-width: 768px) {
+  .grid__col--12 > .btn__col--6.theme__colors {
+    margin: 0px;
+  }
 }
 .grid__col--12 > .btn__col--4.theme__colors {
   background-color: #57defc;
@@ -482,6 +528,11 @@ nav {
   text-align: center;
   display: block;
 }
+@media (min-width: 768px) {
+  .grid__col--12 > .btn__col--4.theme__colors {
+    margin: 0px;
+  }
+}
 .grid__col--12 > .btn__col--3.theme__colors {
   background-color: #deb2ee;
   padding: 10px;
@@ -489,6 +540,11 @@ nav {
   border-radius: 5px;
   text-align: center;
   display: block;
+}
+@media (min-width: 768px) {
+  .grid__col--12 > .btn__col--3.theme__colors {
+    margin: 0px;
+  }
 }
 .grid__col--12 > .btn__col--5.theme__colors {
   background-color: #63cc82;
@@ -498,6 +554,11 @@ nav {
   text-align: center;
   display: block;
 }
+@media (min-width: 768px) {
+  .grid__col--12 > .btn__col--5.theme__colors {
+    margin: 0px;
+  }
+}
 .grid__col--12 > .btn__col--7.theme__colors {
   background-color: #ec9fa3;
   padding: 10px;
@@ -505,6 +566,11 @@ nav {
   border-radius: 5px;
   text-align: center;
   display: block;
+}
+@media (min-width: 768px) {
+  .grid__col--12 > .btn__col--7.theme__colors {
+    margin: 0px;
+  }
 }
 .grid__col--12 > .btn__col--8.theme__colors {
   background-color: #fd9f85;
@@ -514,6 +580,12 @@ nav {
   text-align: center;
   display: block;
 }
+@media (min-width: 768px) {
+  .grid__col--12 > .btn__col--8.theme__colors {
+    margin: 0px;
+  }
+}
+
 .form {
   display: flex;
   flex-direction: column;
