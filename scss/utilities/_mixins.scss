@@ -1,53 +1,13 @@
-@mixin text($size, $l-height: null, $weight:null, $color:null){
+//BEM Elements
 
-	font-size: $size;
-	line-height: $l-height;
-	font-weight: $weight;
-	color: $color;
-
-}
-
-
-//Adjacent sibling margins
-
-@mixin doubly($margin: 1em) {
-	& + & {
-		margin-left: $margin;
+@mixin e($element) {
+	&__#{$element}{
 		@content;
 	}
-	
 }
 
-@mixin bg-colors($map) {
-	@each $theme, $color in $ui-colors {
-
-		&--#{$theme} {
-			background-color: $color; 
-			display: block;
-			margin:10px;
-			@extend %form__button;
-		
-		}
-
-	}
-
-	@each $theme, $color in $grid-colors {
-
-		&__#{$theme} {
-			background-color: $color;
-			padding: 10px;					
-			border-radius: $br;
-			text-align: center;
-			display: block;
-
-
-
-
-
-			
-		}
-
+@mixin m($element) {
+	&--#{$modifier}{
+		@content;
 	}
 }
-
-
