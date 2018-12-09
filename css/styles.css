@@ -13,11 +13,9 @@
 .grid__row {
   padding-top: 40px;
   padding-bottom: 20px;
+  display: wrap;
 }
 
-.img--avatar {
-  align-self: center;
-}
 .img--frame {
   text-align: center;
   border: solid 1px #cdcdcd;
