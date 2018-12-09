@@ -2,24 +2,43 @@
 //====================================================
 
 
-.img {
-	&--logo {
+.img {	
 
+
+	@include m(logo){
 		
-	
-	}
-
-	&--frame {
-		text-align: center;
-		border: solid 1px $cloudy;
-		padding:10px;
-	
-	}
-
-	&--avatar {
-
+		margin:20px 0;
 		align-self: center;
-	
+
 	}
+	
+	@include m(frame){
+			max-width:410px;
+			border: solid 1px $cloudy;
+			padding:10px;
+			margin:20px 0;
+			
+		
+		[class*="grid__col--"]  & {
+
+			align-self: center;
+
+
+
+			
+
+		} 
+			
+
+
+
+	}
+	
+	@include m(avatar) {
+			max-width: 199px;
+			margin:20px 0;
+			align-self: center;
+	}
+
 
 }

@@ -6,7 +6,7 @@
 	}
 }
 
-@mixin m($element) {
+@mixin m($modifier) {
 	&--#{$modifier}{
 		@content;
 	}
