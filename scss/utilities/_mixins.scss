@@ -11,3 +11,12 @@
 		@content;
 	}
 }
+
+//Flexbox mixin
+
+@mixin flexBox($disp, $flexDir, $flexWrap){
+		display: $disp;
+		flex-direction: $flexDir;
+		flex-wrap: $flexWrap;
+
+}
