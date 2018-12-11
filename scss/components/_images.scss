@@ -6,9 +6,7 @@
 
 
 	@include m(logo){
-		
-		margin:20px 0;
-		align-self: center;
+		@extend %image_center;
 
 	}
 	
@@ -29,8 +27,7 @@
 	
 	@include m(avatar) {
 			max-width: 199px;
-			margin:20px 0;
-			align-self: center;
+			@extend %image_center;
 	}
 
 

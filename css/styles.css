@@ -1,6 +1,18 @@
 /*desaturated blue*/
 /*shade of blue	*/
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,400i,700");
+.container {
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
 .btn--info.theme__colors, .btn--warning.theme__colors, .btn--error.theme__colors, .btn--success.theme__colors, .btn--default.theme__colors {
   color: #fff;
   border: none;
@@ -29,6 +41,11 @@
   width: 1px;
 }
 
+.img--avatar, .img--logo {
+  margin: 20px 0;
+  align-self: center;
+}
+
 .headline--primary {
   color: #58e1c1;
   padding-left: 15px;
@@ -39,13 +56,6 @@
   font-size: 16px;
   font-weight: 300;
   color: #818181;
-}
-
-.container {
-  max-width: 480px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 10px;
 }
 
 .grid__row {
@@ -221,10 +231,6 @@
   color: #fff;
 }
 
-.img--logo {
-  margin: 20px 0;
-  align-self: center;
-}
 .img--frame {
   max-width: 410px;
   border: solid 1px #cdcdcd;
@@ -236,8 +242,6 @@
 }
 .img--avatar {
   max-width: 199px;
-  margin: 20px 0;
-  align-self: center;
 }
 
 .btn--default.theme__colors {
