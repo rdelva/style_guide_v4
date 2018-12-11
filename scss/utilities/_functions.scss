@@ -7,9 +7,9 @@
 
 //Calculate em values
 
-/*@function em($target, $context: $base__font-size) {
+@function em($target, $context: $base__font-size) {
 	@return ($target / $context) * 1em;
-}*/
+}
 
 @function px-to-pc ($target, $context: $max-width) {
 
@@ -19,7 +19,7 @@
 //Finding Line Height
 
 @function line-height($base__line , $base__font-size) {
-	@return ($base__line/$base__font-size);
+	@return ($base__line / $base__font-size);
 }
 
 

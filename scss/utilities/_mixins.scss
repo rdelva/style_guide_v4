@@ -20,3 +20,27 @@
 		flex-wrap: $flexWrap;
 
 }
+
+//Text 
+
+@mixin text($fontSize:$base__font-size, $color:null, $weight:null){
+
+	font-size: em($fontSize);
+	color: $color;
+	font-weight: $weight;
+	
+
+}
+
+// Generate modifier color classes
+
+@mixin ui-colors($map) {
+	@each $theme, $color in $map {
+		&--#{$theme}.theme__colors {
+			background-color: $color;
+			@content;  	
+
+		}
+	}
+
+}

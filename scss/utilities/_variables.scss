@@ -15,6 +15,7 @@ $font-weight--bold			: 700;
 // Text
 
 $base__font-size			: 16px;
+$base__line      			: 24px;
 
 
 
@@ -68,13 +69,16 @@ $ui-colors: (
 //Grid Colors
 
 $grid-colors: (
-	'12'			: $turquoiseBlue,
-	'6'			: $shakespeare,
-	'4'	 		: $malibuBlue,
 	'3'			: $lilac,
-	'5'			: $emerald,	
+	'4'	 		: $malibuBlue,
+	'5'			: $emerald,
+	'6'			: $shakespeare,
 	'7'			: $seaPink,
-	'8'	 		: $vividTangerine
+	'8'	 		: $vividTangerine,
+	'12'		: $turquoiseBlue,
+	
+	
+	
 );
 
 //Grid

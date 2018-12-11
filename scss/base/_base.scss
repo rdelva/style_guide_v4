@@ -3,16 +3,18 @@
 //=========================================================
 
 * {
-	
+	font-family: $font-family--primary;
 	box-sizing:  border-box;
 }		
 
-body{
 
-	font-family: $font-family--primary;
+p{
+	@include text(16px, $font-weight--light);
 
-}	
-
+	.container  &  {
+		color: $stormCloud;
+	}
+}
 
 
 ul {
@@ -21,3 +23,4 @@ ul {
 	padding:0;
 
 }
+

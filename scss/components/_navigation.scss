@@ -1,0 +1,41 @@
+.link {
+	[class *="__col--"] > & {
+		align-self: center;
+	}
+}
+
+
+.nav {
+
+	@include flexBox(flex, column, wrap);
+
+	@include e(item){
+		
+				
+		margin:10px 0;
+				
+		a {
+			display:block;
+			padding: 10px 0;
+			text-decoration: none;
+			text-align: center;
+			color: $stormCloud;
+
+			&:link {
+				color:$stormCloud;
+			}
+
+			
+			&:visited{
+				color:$stormCloud; 		
+			}
+
+			&:hover{
+				background-color: $turquoise;
+				color: $white;
+			} 
+		}
+
+	}
+
+}

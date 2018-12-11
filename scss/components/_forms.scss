@@ -1,3 +1,17 @@
 .form {
 	@include flexBox(flex,column,wrap);
+
+	@include e(input){
+		border:none;
+		border-bottom: $turquoise solid 4px;
+		margin:20px 0;
+		padding:0 0 10px 10px;
+		font-weight:bold;
+	}
+
+	@include e(label) {
+		@include m(hidden) {
+			@extend %srt;
+		}
+	}
 }

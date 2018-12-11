@@ -1,0 +1,26 @@
+.headline {
+	
+	@include m(primary){
+		@extend %hdln-prim;
+	}
+
+	@include m(secondary){
+
+		@extend %hdln-sec;
+
+	}
+}
+
+.link {
+	@include text($color: $malibuBlue, $weight: $font-weight--bold);
+	text-decoration:none;
+}
+
+.blockquote {
+	padding: 10px;
+	border-left: $turquoise solid 5px;
+	border-top-left-radius: $br;
+	border-bottom-left-radius: $br;
+	@include text(24px, $color: $stormCloud, $weight: $font-weight--italic);
+	font-style: italic;
+}
