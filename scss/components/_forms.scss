@@ -1,5 +1,10 @@
 .form {
-	@include flexBox(flex,column,wrap);
+	
+	.btn {
+		&--default {
+			width:100%;
+		}
+	}
 
 	@include e(input){
 		border:none;
@@ -7,7 +12,10 @@
 		margin:20px 0;
 		padding:0 0 10px 10px;
 		font-weight:bold;
+		width: 100%;
 	}
+
+	
 
 	@include e(label) {
 		@include m(hidden) {

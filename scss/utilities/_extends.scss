@@ -59,16 +59,32 @@
 }
 
 
-
-%form__button {
+%btn {
 	color: $white;
 	border:none;
 	text-transform: uppercase;
 	font-weight: $font-weight--bold;
 	border-radius: $br;
-	padding:10px;
-	width: 100%;
-	margin: 10px 0;
+	padding: 15px 30px;
+	
+
+}
+
+%form__button {
+
+	@include mq(medium) {
+
+		width: auto;
+	}
+
+}
+
+
+
+%btn-themes {
+	@include mq(medium) {
+		 width: auto;
+	}
 }
 
 %gridCol {
@@ -105,6 +121,7 @@
 
 	
 		margin:20px 0;
+		align-self: center;
 		
 
 

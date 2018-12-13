@@ -4,45 +4,72 @@
 
 .container {
 	@extend %container;
+	 font-family: $font-family--primary;
+
 }
 
-.grid__col {
-	@include mq (medium);
-		@include g-columns {
-			border: 1px solid red;
-		}
-}
+
+
 
 .grid {
 	@include e(row) {
 		padding-top: 30px;
 		padding-bottom:20px;
 		@extend %grid__row-disp;
-		
+		@extend %clearfix;
 
 	}
 
-	@include e(col){
+	@include e(col) {
 
-		@extend %grid__col-disp; /*puts everything in column */
-		@include mq(medium){
-			@include doubly(percentage($g-gutter-width / $context));    
-			    float: left;
-			    min-height: 1px;
-			    padding-left: 10px;
-			    padding-right: 10px;
-			    &:last-of-type {
-			      float: right;
-			} 
+
+
+		@include  mq(medium) {
+
+				@include g-columns {
+					 border: 1px solid red;	
+					 
+					
+
+			}
+			
+
 		}
-
-		@include ui-colors($grid-colors) {		
-			@extend %gridCol;
-		}		
+		
+		
 	
-	}
+	}/* enf of col */
 				
 		
 
-}// end of .grid
+}/*end of grid*/
 
+
+
+
+[class^="grid__col--"] { 
+  @include mq(small)  {
+    margin-top: em(12px);
+    margin-bottom: em(12px);
+    @include flexBox(flex, column, wrap);
+
+
+  }
+
+  @include mq(medium) {
+    @include doubly(percentage($g-gutter-width / $context)); 
+    @include flexBox(flex, row, wrap);
+    justify-content:center;
+
+   
+    float: left;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    &:last-of-type {
+      float: right;
+    }
+
+  }
+
+}

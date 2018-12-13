@@ -68,6 +68,7 @@
   // Generate column modifier classes
     &--#{$i} {
       width: percentage($target / $context);
+     
 
       @content;
 

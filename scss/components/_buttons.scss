@@ -1,8 +1,30 @@
 .btn {
 	@include ui-colors($ui-colors){
-		@extend %form__button;
+		@extend %btn;
+		margin:10 0px;	
 	} 
 
-	
 }
 
+
+
+[class^="btn--"] {
+  
+	[class^="grid_col--"] & {
+
+			@include mq(medium) {
+		   		width: 100%;		     	
+		     	display: inline-block;
+		   		@include doubly(20px);
+		    	
+		    	justify-content: space-around;
+		    	
+
+		}
+
+
+		   
+	 	
+	}
+
+}

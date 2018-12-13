@@ -8,6 +8,10 @@
 
 		@extend %hdln-sec;
 
+		.form &{
+				margin: 16px 0;
+		}
+
 	}
 }
 

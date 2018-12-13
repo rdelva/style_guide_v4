@@ -6,8 +6,10 @@
 
 
 	@include m(logo){
-		@extend %img__logo-disp;
+		[class^="grid__col--"]  & {
+			@extend %img__logo-disp;	
 
+		} 
 	}
 	
 	@include m(frame){
@@ -16,34 +18,30 @@
 			border: solid 1px $cloudy;
 			padding:10px;
 			margin:20px 0;
-			
-		
-		[class*="grid__col--"]  & {
-
 			align-self:center;
-
-		} 
 			
 	}
 	
 	@include m(avatar) {
-			max-width: 199px;
-			width:100%;
+		max-width: 199px;
+		width:100%;
+
+		.form  & {
+			text-align: center;
+			/*hello*/
+		}
+
+
+
 		
-		@include mq(medium) {
-			[class*="grid__col--"]  & {
-
-			
-				
-			align-self: center;
-			
-			}
-		}	
-
-
 
 	}
-
-
 }
 
+
+
+	.grid__col--6  .img--avatar {
+
+		align-self:center;
+
+	}
