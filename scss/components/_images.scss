@@ -6,12 +6,13 @@
 
 
 	@include m(logo){
-		@extend %image_center;
+		@extend %img__logo-disp;
 
 	}
 	
 	@include m(frame){
 			max-width:410px;
+			width:100%;
 			border: solid 1px $cloudy;
 			padding:10px;
 			margin:20px 0;
@@ -19,7 +20,7 @@
 		
 		[class*="grid__col--"]  & {
 
-			align-self: center;
+			align-self:center;
 
 		} 
 			
@@ -27,8 +28,22 @@
 	
 	@include m(avatar) {
 			max-width: 199px;
-			@extend %image_center;
+			width:100%;
+		
+		@include mq(medium) {
+			[class*="grid__col--"]  & {
+
+			
+				
+			align-self: center;
+			
+			}
+		}	
+
+
+
 	}
 
 
 }
+
