@@ -23,15 +23,18 @@
 	@include e(col) {
 
 
+		@include ui-colors($grid-colors) {
+				padding: 10px 20px;
+				border-radius: $br;
+		}
+			
 
 		@include  mq(medium) {
 
-				@include g-columns {
-					 border: 1px solid red;	
-					 
-					
+				@include g-columns;
+									
 
-			}
+			
 			
 
 		}
