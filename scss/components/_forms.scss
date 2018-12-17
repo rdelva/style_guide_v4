@@ -1,9 +1,13 @@
 .form {
-	
+
 	.btn {
 		&--default {
 			width:100%;
 		}
+	}
+
+	& > .img--avatar {
+		align-self: center;
 	}
 
 	@include e(input){
@@ -15,6 +19,7 @@
 		width: 100%;
 	}
 
+
 	
 
 	@include e(label) {
@@ -22,4 +27,6 @@
 			@extend %srt;
 		}
 	}
+
+
 }

@@ -41,7 +41,7 @@
 		&--#{$theme}.theme__colors {
 			background-color: $color;
 			@content;
-
+			
 		}
 	}
 
@@ -86,8 +86,9 @@
 
 @mixin mq($break){
 
+
 	@if $break == "small" {
-		@media (min-width:$brkpoint-sm) and (max-width: $brkpoint-m){
+		@media (min-width:$brkpoint-xs) and (max-width: $brkpoint-m){
         	@content;
     	}
 	}

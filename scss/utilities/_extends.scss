@@ -6,32 +6,30 @@
 
 }
 
-%centered  {
+%centered  {	
 		float:none;
 		margin-right:auto;
 		margin-left:auto;
-
 }
+
+
 
 %container {
 
-		max-width: 480px;
 		width: 100%;
 		margin: 0 auto;
 		padding:10px;
 	
 
-		@include mq (medium){
-		
-			max-width:760px;
-		
-		
-	}
+		@include mq (small){
+			
+			max-width:$brkpoint-sm;	
+		}
 
-	@include mq (large) {
-		/*max-width: 1400px;*/
-
-	}
+		@include mq (medium) {
+		
+			max-width: $brkpoint-m;
+		}
 }
 
 %grid__row-disp {
@@ -66,7 +64,10 @@
 	font-weight: $font-weight--bold;
 	border-radius: $br;
 	padding: 15px 30px;
-	
+}
+
+%btn--margin {
+	margin: 0 10px;
 
 }
 
@@ -129,7 +130,7 @@
 }
 
 
-//Links
+
 
 
 
@@ -150,4 +151,3 @@
 
 
 
-//Navigation

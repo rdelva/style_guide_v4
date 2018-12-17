@@ -16,6 +16,15 @@
 	@return ($target / $context) * 100%;	
 }
 
+@function per-line ($items) {
+	
+	$g-pct: px-to-pc($gutter) * 2;
+	$-total: $items * $g-pct;
+	@return (100 / $items) - $g-total;
+}
+
+
+
 //Finding Line Height
 
 @function line-height($base__line , $base__font-size) {
@@ -23,12 +32,6 @@
 }
 
 
-@function per-line ($items) {
-	
-	$g-pct: px-to-pc($gutter) * 2;
-	$-total: $items * $g-pct;
-	@return (100 / $items) - $g-total;
-}
 
 
 

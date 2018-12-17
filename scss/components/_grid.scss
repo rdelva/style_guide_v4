@@ -9,14 +9,18 @@
 }
 
 
-
-
 .grid {
 	@include e(row) {
+		/*@include flexBox(flex, column, wrap);*/
+
 		padding-top: 30px;
 		padding-bottom:20px;
 		@extend %grid__row-disp;
 		@extend %clearfix;
+
+		&:last-of-type  {
+			@extend %grid__row-disp
+		}
 
 	}
 
@@ -26,24 +30,15 @@
 		@include ui-colors($grid-colors) {
 				padding: 10px 20px;
 				border-radius: $br;
+	
 		}
-			
-
 		@include  mq(medium) {
 
-				@include g-columns;
-									
-
-			
-			
-
+				@include g-columns;					
 		}
-		
-		
 	
-	}/* enf of col */
-				
-		
+	}/* enf of col */	
+
 
 }/*end of grid*/
 
@@ -51,28 +46,34 @@
 
 
 [class^="grid__col--"] { 
-  @include mq(small)  {
-    margin-top: em(12px);
-    margin-bottom: em(12px);
-    @include flexBox(flex, column, wrap);
-
-
-  }
+ 
+  	@include mq(small)  {
+  		@include flexBox(flex, column, wrap);
+    	margin-top: em(12px);
+    	margin-bottom: em(12px);
+  	}
 
   @include mq(medium) {
-    @include doubly(percentage($g-gutter-width / $context)); 
-    @include flexBox(flex, row, wrap);
-    justify-content:center;
+  	  	@include flexBox(flex, row, wrap);
+    	@include doubly(percentage($g-gutter-width / $context)); 
+  
+	    	 float: left;
+	    	min-height: 1px;
+	    	padding-left: 10px;
+	    	padding-right: 10px;
+	    	&:last-of-type {
+	      	float: right;
 
-   
-    float: left;
-    min-height: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    &:last-of-type {
-      float: right;
-    }
-
-  }
-
+	    	}
+  		}
+ 
 }
+
+
+	.centered {
+
+  		@include mq(medium){
+		margin-right:auto;
+		margin-left:auto;
+  		}	
+ 	}

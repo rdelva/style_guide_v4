@@ -7,13 +7,13 @@
 
 	@include m(logo){
 		[class^="grid__col--"]  & {
-			@extend %img__logo-disp;	
+			/*@extend %img__logo-disp;	*/
 
 		} 
 	}
 	
 	@include m(frame){
-			max-width:410px;
+			
 			width:100%;
 			border: solid 1px $cloudy;
 			padding:10px;
@@ -23,17 +23,19 @@
 	}
 	
 	@include m(avatar) {
+		height: 199px;
+		width: 100%;
 		max-width: 199px;
-		width:100%;
+	
 
 		.form  & {
-			text-align: center;
-			/*hello*/
+			@extend %centered;
 		}
 
 
-
-		
+		[class^="grid__col--"]  & {
+			@extend %centered;
+		}
 
 	}
 }
