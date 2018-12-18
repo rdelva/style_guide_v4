@@ -4,13 +4,6 @@
 
 .img {	
 
-
-	/*@include m(logo){
-		[class^="grid__col--"]  & {
-			@extend %img__logo-disp;	
-
-		} 
-	}*/
 	
 	@include m(frame){
 			

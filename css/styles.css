@@ -260,14 +260,6 @@
   border-radius: 5px;
 }
 
-.img {
-  /*@include m(logo){
-  		[class^="grid__col--"]  & {
-  			@extend %img__logo-disp;	
-  
-  		} 
-  	}*/
-}
 .img--frame {
   border: solid 1px #cdcdcd;
   padding: 10px;
