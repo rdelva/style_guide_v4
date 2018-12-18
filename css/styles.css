@@ -7,7 +7,7 @@
   clear: both;
 }
 
-[class^=grid__col--] .img--avatar, .form .img--avatar {
+[class^=grid__col--] .img--avatar, .form > .img--avatar {
   float: none;
   margin-right: auto;
   margin-left: auto;
@@ -28,14 +28,19 @@
     max-width: 768px;
   }
 }
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+  }
+}
 
-.grid__row:last-of-type, .grid__row {
+.nav, .grid__row:last-of-type, .grid__row {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
 @media (min-width: 769px) {
-  .grid__row:last-of-type, .grid__row {
+  .nav, .grid__row:last-of-type, .grid__row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -82,7 +87,6 @@
   /* enf of col */
 }
 .grid__row {
-  /*@include flexBox(flex, column, wrap);*/
   padding-top: 30px;
   padding-bottom: 20px;
 }
@@ -222,16 +226,11 @@
 }
 
 .nav {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-@media (min-width: 769px) {
-  .nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+  /*@include flexBox(flex, column, wrap);
+  
+  	@include mq(medium){
+  			@include flexBox(flex, row, wrap);
+  	}*/
 }
 .nav__item {
   margin: 10px 0;
@@ -261,20 +260,25 @@
   border-radius: 5px;
 }
 
-[class^=grid__col--] .img--logo {
-  /*@extend %img__logo-disp;	*/
+.img {
+  /*@include m(logo){
+  		[class^="grid__col--"]  & {
+  			@extend %img__logo-disp;	
+  
+  		} 
+  	}*/
 }
 .img--frame {
   width: 100%;
   border: solid 1px #cdcdcd;
   padding: 10px;
   margin: 20px 0;
-  align-self: center;
 }
 .img--avatar {
   height: 199px;
   width: 100%;
   max-width: 199px;
+  display: block;
 }
 .btn--default.theme__colors {
   background-color: #57defc;
@@ -297,7 +301,6 @@
 }
 @media (min-width: 769px) {
   [class^=grid__col--] > [class^=btn--] {
-    width: auto;
     margin: 0 10px;
   }
   [class^=grid__col--] > [class^=btn--] + [class^=grid__col--] > [class^=btn--] {
@@ -307,9 +310,6 @@
 
 .form .btn--default {
   width: 100%;
-}
-.form > .img--avatar {
-  align-self: center;
 }
 .form__input {
   border: none;

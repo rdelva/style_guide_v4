@@ -2,7 +2,7 @@
 
 	@include ui-colors($ui-colors){
 		@extend %btn;
-
+		
 	} 
 
 }
@@ -14,9 +14,9 @@
 
 			margin-top: 10px;
 			@include mq(medium) {
-				
+
 				@include doubly(20px);
-		   		width: auto;		     	
+		   				     	
 		     	margin: 0 10px;   		
 		}
  	

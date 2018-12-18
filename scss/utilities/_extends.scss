@@ -30,6 +30,13 @@
 		
 			max-width: $brkpoint-m;
 		}
+
+		@include mq (large) {
+		
+			max-width: $brkpoint-lg;
+		}
+
+	
 }
 
 %grid__row-disp {
@@ -64,6 +71,9 @@
 	font-weight: $font-weight--bold;
 	border-radius: $br;
 	padding: 15px 30px;
+
+
+	
 }
 
 %btn--margin {

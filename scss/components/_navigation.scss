@@ -7,11 +7,12 @@
 
 .nav {
 
-	@include flexBox(flex, column, wrap);
+	@extend %grid__row-disp;
+	/*@include flexBox(flex, column, wrap);
 
 	@include mq(medium){
 			@include flexBox(flex, row, wrap);
-	}
+	}*/
 
 	@include e(item){
 		

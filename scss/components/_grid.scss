@@ -11,7 +11,6 @@
 
 .grid {
 	@include e(row) {
-		/*@include flexBox(flex, column, wrap);*/
 
 		padding-top: 30px;
 		padding-bottom:20px;

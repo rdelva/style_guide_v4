@@ -1,4 +1,7 @@
 .form {
+	
+
+	
 
 	.btn {
 		&--default {
@@ -6,9 +9,7 @@
 		}
 	}
 
-	& > .img--avatar {
-		align-self: center;
-	}
+
 
 	@include e(input){
 		border:none;
