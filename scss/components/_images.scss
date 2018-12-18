@@ -14,17 +14,23 @@
 	
 	@include m(frame){
 			
-			width:100%;
+			
 			border: solid 1px $cloudy;
 			padding:10px;
 			margin:20px 0;
+			display: block;
+			max-width: 100%;
+
+		[class^="grid__col--"]  & {
+			@extend %centered;
+		}
+
 			
 	}
 	
 	@include m(avatar) {
-		height: 199px;
-		width: 100%;
-		max-width: 199px;
+		height: 199px;		
+		max-width:  100%;;
 		display: block;
 	
 

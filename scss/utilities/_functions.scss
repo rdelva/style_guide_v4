@@ -19,7 +19,7 @@
 @function per-line ($items) {
 	
 	$g-pct: px-to-pc($gutter) * 2;
-	$-total: $items * $g-pct;
+	$g-total: $items * $g-pct;
 	@return (100 / $items) - $g-total;
 }
 

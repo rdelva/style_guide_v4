@@ -7,7 +7,7 @@
   clear: both;
 }
 
-[class^=grid__col--] .img--avatar, .form > .img--avatar {
+[class^=grid__col--] .img--avatar, .form > .img--avatar, [class^=grid__col--] .img--frame {
   float: none;
   margin-right: auto;
   margin-left: auto;
@@ -269,15 +269,15 @@
   	}*/
 }
 .img--frame {
-  width: 100%;
   border: solid 1px #cdcdcd;
   padding: 10px;
   margin: 20px 0;
+  display: block;
+  max-width: 100%;
 }
 .img--avatar {
   height: 199px;
-  width: 100%;
-  max-width: 199px;
+  max-width: 100%;
   display: block;
 }
 .btn--default.theme__colors {
@@ -301,10 +301,16 @@
 }
 @media (min-width: 769px) {
   [class^=grid__col--] > [class^=btn--] {
+    width: auto;
     margin: 0 10px;
   }
   [class^=grid__col--] > [class^=btn--] + [class^=grid__col--] > [class^=btn--] {
     margin-left: 20px;
+  }
+}
+@media (min-width: 769px) and (min-width: 1400px) {
+  [class^=grid__col--] > [class^=btn--] {
+    flex: 5 12.8571428571%;
   }
 }
 
