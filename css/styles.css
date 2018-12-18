@@ -225,13 +225,6 @@
   align-self: center;
 }
 
-.nav {
-  /*@include flexBox(flex, column, wrap);
-  
-  	@include mq(medium){
-  			@include flexBox(flex, row, wrap);
-  	}*/
-}
 .nav__item {
   margin: 10px 0;
 }
