@@ -12,8 +12,8 @@
 .grid {
 	@include e(row) {
 
-		padding-top: 30px;
-		padding-bottom:20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 		@extend %grid__row-disp;
 		@extend %clearfix;
 
